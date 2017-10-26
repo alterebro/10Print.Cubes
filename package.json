@@ -7,7 +7,8 @@
   	"dev": "ip=`ipconfig getifaddr en0`; php -S $ip:8000 -t src/",
   	"serve": "ip=`ipconfig getifaddr en0`; php -S $ip:8000 -t dist/",
 	"server" : "live-server",
-  	"build": "gulp"
+  	"build": "gulp",
+	"deploy": "surge dist/ 10print.surge.sh"
   },
   "keywords": [
     "10print"
