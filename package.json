@@ -1,7 +1,7 @@
 {
-  "name": "10print",
+  "name": "10Print.Cubes",
   "version": "1.0.0",
-  "description": "10print variation",
+  "description": "10 PRINT CHR$(205.5+RND(1)); : GOTO 10 // 10Print Variation using concave and convex cubes",
   "main": "index.js",
   "scripts": {
   	"dev": "ip=`ipconfig getifaddr en0`; php -S $ip:8000 -t src/",
@@ -10,11 +10,16 @@
   	"build": "gulp",
 	"deploy": "surge dist/ 10print.surge.sh"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alterebro/10Print.Cubes"
+  },
   "keywords": [
     "10print"
   ],
   "author": "Jorge Moreno aka Moro, www.moro.es (@alterebro)",
   "license": "ISC",
+  "homepage": "https://github.com/alterebro/10Print.Cubes#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "cssnano": "^3.10.0",
