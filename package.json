@@ -1,0 +1,30 @@
+{
+  "name": "10print",
+  "version": "1.0.0",
+  "description": "10print variation",
+  "main": "index.js",
+  "scripts": {
+  	"dev": "ip=`ipconfig getifaddr en0`; php -S $ip:8000 -t src/",
+  	"serve": "ip=`ipconfig getifaddr en0`; php -S $ip:8000 -t dist/",
+	"server" : "live-server",
+  	"build": "gulp"
+  },
+  "keywords": [
+    "10print"
+  ],
+  "author": "Jorge Moreno aka Moro, www.moro.es (@alterebro)",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "cssnano": "^3.10.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-postcss": "^7.0.0",
+    "gulp-replace": "^0.6.1",
+    "gulp-sequence": "^0.4.6",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.2"
+  }
+}
