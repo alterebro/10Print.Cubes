@@ -20,10 +20,40 @@
 </head>
 <body>
 
-<h1>Hello World</h1>
-<div id="output"></div>
+	<section id="app">
+	    <header>
+	        <h1><a href="#">10PRINT Variation</a> Concave / Convex cube Pattern Generator</h1>
+	        <fieldset>
+	            <legend>Cube dimensions</legend>
+	            <dl>
+	                <dt><label for="cubes-width">Cubes Width</label></dt>
+	                <dd><input type="range" value="40" id="cubes-width" min="20" max="80" step="5" /></dd>
+
+	                <dt><label for="cubes-height">Cubes Height</label></dt>
+	                <dd><input type="range" value="30" id="cubes-height" min="20" max="80" step="5" /></dd>
+
+	                <dt><label for="cubes-color">Cubes Color</label></dt>
+	                <dd><input type="color" value="#99aacc" id="cubes-color" /></dd>
+
+	                <dt><label for="cubes-factor">Perspective Factor</label></dt>
+	                <dd><input type="range" value="5" id="cubes-factor" min="3" max="10" step="1" /></dd>
+
+	                <dt><label for="cubes-ratio">Concave / Convex ratio</label></dt>
+	                <dd><input type="range" value="0.5" id="cubes-ratio" min="0" max="1" step="0.05" /></dd>
+	            </dl>
+	            <p><a href="#" class="button" id="cubes-svg" target="_blank" download>Download SVG</a></p>
+	            <!-- p><button type="button" id="cubes-download-svg">Download Image .SVG</button></p>
+	            <p><button type="button" id="cubes-download-png">Download Image .PNG</button></p -->
+	            <p><button type="button" id="cubes-reset">Regenerate</button></p>
+	        </fieldset>
+	        <hr />
+	    </header>
+	    <div id="output"></div>
+	</section>
+
 
 <!-- build:js js/build.js -->
+<script type="text/javascript" src="../node_modules/rune.js/dist/rune.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 <!-- endbuild -->
 </body>

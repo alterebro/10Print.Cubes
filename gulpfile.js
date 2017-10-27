@@ -28,7 +28,9 @@ gulp.task('build', function () {
 	return gulp.src('./src/index.html')
 		.pipe(useref())
 		.pipe(gulpif('*.css',postcss(plugins)))
-		.pipe(gulpif('*.js', uglify()))
+		.pipe(gulpif('*.js', uglify().on('error', function(e){
+            console.log(e);
+         })))
 		.pipe(gulp.dest('./dist'));
 });
 

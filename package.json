@@ -4,11 +4,11 @@
   "description": "10 PRINT CHR$(205.5+RND(1)); : GOTO 10 // 10Print Variation using concave and convex cubes",
   "main": "index.js",
   "scripts": {
-  	"dev": "ip=`ipconfig getifaddr en0`; php -S $ip:8000 -t src/",
-  	"serve": "ip=`ipconfig getifaddr en0`; php -S $ip:8000 -t dist/",
-	"server" : "live-server",
-  	"build": "gulp",
-	"deploy": "surge dist/ 10print.surge.sh"
+    "dev": "ip=`ipconfig getifaddr en0`; php -S $ip:8000 -t src/",
+    "serve": "ip=`ipconfig getifaddr en0`; php -S $ip:8000 -t dist/",
+    "server": "live-server",
+    "build": "gulp",
+    "deploy": "surge dist/ 10print.surge.sh"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,8 @@
     "gulp-replace": "^0.6.1",
     "gulp-sequence": "^0.4.6",
     "gulp-uglify": "^3.0.0",
-    "gulp-useref": "^3.1.2"
+    "gulp-useref": "^3.1.2",
+    "live-server": "^1.2.0",
+    "rune.js": "^1.1.5"
   }
 }
