@@ -8,7 +8,7 @@ body {
     font-family: monospace;
 	font-weight: normal;
     font-size: 1.6em;
-	line-height: 1.15;
+	line-height: 1.4;
     background: #333;
 	color: #eee;
 	text-rendering: optimizeLegibility;
@@ -47,20 +47,24 @@ section#app {
     header {
         order: 1;
         flex: 1 0 auto;
-        max-width: 300px;
+        max-width: 380px;
         padding: 0 0 0 3rem;
 
-        h1 {
+        h1, h2 {
             font-size: 1.4rem;
+			margin: 0;
+
             a {
                 display: block;
             }
         }
 
+		h2 { color: #999; }
+
         fieldset {
             border: none;
             border-top: solid rgba(255, 255, 255, .3) 1px;
-            margin: 2rem 0;
+            margin: 2rem 0 0;
             padding: 0;
 
             dt {
